@@ -1,0 +1,110 @@
+.carteDeck{
+	visibility : hidden;
+	z-index : 0;
+}
+.carteDeckEnnemi{
+	visibility : hidden;
+}
+
+.carteSuivante{
+	position: absolute;
+	/*width: 76px;
+	height : 102px;*/
+	/*top : 34px;
+	left : 26px; *//*0px;*/ /*14px;*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	visibility : visible;
+	/*z-index : 1;*/
+}
+
+.carteCourante{
+	position: absolute;
+	/*width: 102px;
+	height : 136px;*/
+	/*left : 102px;
+	top : 0px;*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	visibility : visible;
+}
+
+.carteChoisie{
+	position: absolute;
+	/*width: 89px;
+	height : 119px;*/
+	/*left : 842px;
+	top : 0px;*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	visibility : visible;
+}
+
+.carteJeu{
+	position: absolute;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	visibility : visible;
+}
+
+.texteInfoCartes{
+	color: white;
+	font: bold italic 20pt "Myriad Pro";
+}
+#texteInfoCarteSuivante{
+	position: absolute;
+	width:75px;
+	height:40px;
+	top: 0px;
+	left: 26px;
+	text-align: center;
+	cursor: default;
+}
+#texteInfoCartesChoisies{
+	position: absolute;
+	width:250px;
+	height:40px;
+	top: 0px;
+	left: 766px;
+	text-align: left;
+	cursor: default;
+}
+
+
+/* Filtres */
+/* ON NE PEUT PAS LES ADDITIONNER !!! */
+[valide="non"]{
+	-webkit-filter: brightness(50%);
+}
+[jouable="non"]{
+	-webkit-filter: grayscale(100%);
+}
+/*[defaussement="oui"]{
+	-webkit-filter: grayscale(100%);
+}
+[level="1"]{
+	-webkit-filter: hue-rotate(120deg);
+}
+[level="2"]{
+	-webkit-filter: hue-rotate(40deg);
+}
+[level="3"]{
+	-webkit-filter: hue-rotate(0deg);
+}*/
+
+/* Images */
+/*[carteID="1"] {
+	background-image: url(../img/GUI/Cartes/Carte1.png);
+}
+[carteID="2"] {
+	background-image: url(../img/GUI/Cartes/Carte2.png);
+}
+[carteID="3"] {
+	background-image: url(../img/GUI/Cartes/Carte3.png);
+}
+[carteID="4"] {
+	background-image: url(../img/GUI/Cartes/Carte4.png);
+}
+[carteID="5"] {
+	background-image: url(../img/GUI/Cartes/Carte5.png);
+}*/

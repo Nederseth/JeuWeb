@@ -1,0 +1,368 @@
+.systemeCartes{
+	position: absolute;
+	width: 100%;
+	height: 25%;
+	background-image: url(../img/GUI/fondInterface.png);
+	top:75%;
+}
+
+.menuReplay[affichage="non"]{
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	top: -160px;
+	left: 362px;
+	z-index:9999;
+	border: 2px solid black;
+	background-image: url(../img/GUI/fondInterface.png);
+	-webkit-filter: hue-rotate(120deg);
+	-webkit-transition: all 1s;
+}
+
+.menuReplay[affichage="oui"]{
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	top: 150px;
+	left: 362px;
+	z-index:9999;
+	border: 2px solid black;
+	background-image: url(../img/GUI/fondInterface.png);
+	-webkit-filter: hue-rotate(120deg);
+	-webkit-transition: all 1s;
+	
+}
+
+.menuReplayTexte{
+	position: absolute;
+	width: 300px;
+	height: 80px;
+	top: 10px;
+	left: 0px;
+	text-align: center;
+	color: white;
+	font: bold 40px "Myriad Pro";
+	cursor: default;
+}
+
+.menuReplayBouton{
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	top: 90px;
+	left: 50px;
+	text-align: center;
+	font: bold 30px "Myriad Pro";
+	cursor: default;
+	color: white;
+	background-image: url(../img/GUI/fondInterface.png);
+	-webkit-filter: hue-rotate(-120deg);
+	border: 2px solid black;
+}
+
+.switchAD{
+	position: absolute;
+	width: 133px;
+	height: 110px;
+	bottom: 10px;
+	right: 0%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index:9999;
+}
+
+.iSwitchAD{
+	position: absolute;
+	width: 36px;
+	height: 30px;
+	top: 0%;
+	right: 0%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	z-index:9999;
+}
+
+[valswitch="action"]{
+	background-image: url(../img/GUI/onglet_action.png);
+}
+[valswitch="defausse"]{
+	background-image: url(../img/GUI/onglet_defausse.png);
+}
+
+.systemeInfos{
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	/*background-image: url(../img/GUI/fondInterface.png);*/
+	top:0%;
+}
+
+.infosPersonnage{
+	position: absolute;
+	width: 45%;
+	height: 100%;
+	top:0%;
+}
+#infosJoueur{
+	left:0%;
+}
+#infosEnnemi{
+	left:55%;
+}
+
+.infosSequence{
+	position: absolute;
+	width: 10%;
+	height: 100%;
+	top:0%;
+	left:45%;
+}
+
+.vignettePersonnage{
+	position: absolute;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:25%;
+	height:100%;
+	top:0%;
+}
+#infosJoueur .vignettePersonnage{
+	left:0%;
+}
+#infosEnnemi .vignettePersonnage{
+	right:0%;
+	-webkit-transform: scaleX(-1);
+}
+
+.infoVie{
+	position: absolute;
+	top: 5%;
+	width: 75%;
+	height: 25%;
+	border: 4px solid black;
+}
+#infosJoueur .infoVie{
+	left:25%;
+}
+#infosEnnemi .infoVie{
+	right:25%;
+}
+
+.infoVieBarre{
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	background-color: red;
+}
+#infosJoueur .infoVieBarre{
+	left:0%;
+}
+#infosEnnemi .infoVieBarre{
+	right:0%;
+}
+
+.infoVieTexte{
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font: bold italic 30px "Myriad Pro";
+}
+#infosJoueur .infoVieTexte{
+	left:5px;
+	text-align: left;
+}
+#infosEnnemi .infoVieTexte{
+	right:5px;
+	text-align:right;
+}
+
+.infoPuissance{
+	position: absolute;
+	top: 35%;
+	width: 65%;
+	height: 15%;
+	border: 4px solid black;
+}
+#infosJoueur .infoPuissance{
+	left:25%;
+}
+#infosEnnemi .infoPuissance{
+	right:25%;
+}
+
+.infoPuissanceBarre{
+	position: absolute;
+	top: 0%;
+	height: 100%;
+	background-color: violet;
+}
+#infosJoueur .infoPuissanceBarre{
+	left:0%;
+}
+#infosEnnemi .infoPuissanceBarre{
+	right:0%;
+}
+
+
+
+.effetCartesInfos{
+	position: absolute;
+	width: 200px;
+	height: 80px;
+	background-color: red;
+}
+
+.effetCartesInfosTexte[transition="non"]{
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	top:50%;
+	opacity:1;
+	background-color: blue;
+	font: bold 30px "Myriad Pro";
+}
+
+.effetCartesInfosTexte[transition="oui"]{
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	top:0%;
+	opacity:0;
+	font: bold 20px "Myriad Pro";
+	-webkit-transition: all 1s;
+	
+}
+.effetCartesInfosTexte[revert="false"]{
+	text-align:left;
+}
+.effetCartesInfosTexte[revert="true"]{
+	text-align:right;
+}
+
+
+/*.infoVie{
+	position: absolute;
+	top: 5%;
+	width: 75%;
+	height: 30%;
+	border: 4px solid black;
+}*/
+
+
+
+/*
+.window{
+	position: absolute;
+	height: 350px;
+	background: rgba(100, 100, 255, 0.8);
+	top: 20px;
+	left: 40px;
+	border: white solid 2px;
+}
+
+.cartesChoisies{
+	position: absolute;
+	width: 205px;
+	height: 100%;
+	border: white solid 1px;
+	top:0px;
+	left:819px;
+}
+
+.cartesCourantes{
+	position: absolute;
+	width: 717px;
+	height: 100%;
+	border: white solid 1px;
+	top:0px;
+	left:102px;
+}
+
+.carteSuivante{
+	position: absolute;
+	width: 102px;
+	height: 100%;
+	border: white solid 1px;
+	top:0px;
+	left:0px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/*.window .menu{
+	height: 100%;
+	width: 160px;
+	float: left;
+	border-right: #caffff solid 2px;
+	font-size: 14px;
+}
+.menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.menu li{
+	background-image: url(../img/images/goal.png);
+	background-repeat: no-repeat;
+	background-color: rgba(74, 74, 139, 0.75);
+	background-position: left center;
+	padding: 5px;
+	padding-left: 27px;
+	padding-top: 7px;
+	border: 2px outset;
+	cursor: pointer;
+	color: #caffff;
+	line-height: 28px;
+}
+.menu li:hover{
+	background-color: rgba(187, 187, 209, 0.76);
+}
+.menu li:active{
+	background-image: url(../img/images/goal-done.png);
+	border-style: inset;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.menu li.selected{
+	background-image: url(../img/images/goal-done.png);
+	background-color: rgba(0, 0, 0, 0.5);
+	cursor: default;
+	border-style: inset;
+}
+.window .content{
+	float: left;
+	height: 100%;
+	width: 400px;
+	position: relative;
+	background: rgba(0, 0, 0, 0.5);
+}
+dl{
+	margin: 10px;
+}
+dl > *{
+	margin: 2px 0px;
+	font-size: 12px;
+	line-height: 17px;
+}
+dt{
+	float: left;
+	clear: both;
+	width: 90px;
+	color: #caffff;
+}
+dt:after{
+	content: " :";
+}
+dd{
+	float: left;
+}*/
